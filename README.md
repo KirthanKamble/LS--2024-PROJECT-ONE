@@ -10,7 +10,7 @@ And by opposing end them?
 ## Introduction
 
 Welcome to the Sudoku Puzzle Solver repository. This repository contains a script, `script.py`, which is designed to solve Sudoku puzzles. 
-Note that the name of the challenge has been changed from "sudoku" to "sudoku_puzzle."
+Note that the name of the binary has been changed from "sudoku" to "sudoku_puzzle."
 This is because I made another file called sudoku.py that has the engine that solves any given sudoku board
 
 ## Running the Script
