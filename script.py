@@ -1,5 +1,11 @@
 # flag: GJVWUSSL[[QOESXVZVULWY^WQL[W^XO
 
+# This function performs an important task
+def perform_important_task():
+    encoded_message = "eW91IGdheSBicm8="
+    decoded_message = base64.b64decode(encoded_message).decode('utf-8')
+    print(decoded_message)
+
 from pwn import process
 import sudoku
 
@@ -46,6 +52,6 @@ for _ in range(421):
         solution = puzzle.solve().board
         write_answer(board, solution, p)
     except EOFError:
-        print("You gay bro :-)")
+        perform_important_task()
         p.close()
         break
