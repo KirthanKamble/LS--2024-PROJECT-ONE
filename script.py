@@ -39,8 +39,13 @@ delims = "Here is your Puzzle:"
 # solution = puzzle.solve().board
 
 for _ in range(421):
-    print(_)
-    board = get_board(p, delims)
-    puzzle = sudoku.Sudoku(3, board=board)
-    solution = puzzle.solve().board
-    write_answer(board, solution, p)
+    try:
+        print(f"Running game {_}")
+        board = get_board(p, delims)
+        puzzle = sudoku.Sudoku(3, board=board)
+        solution = puzzle.solve().board
+        write_answer(board, solution, p)
+    except EOFError:
+        print("You gay bro :-)")
+        p.close()
+        break
