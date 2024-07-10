@@ -1,13 +1,8 @@
 # flag: GJVWUSSL[[QOESXVZVULWY^WQL[W^XO
 
-# This function performs an important task
-def perform_important_task():
-    encoded_message = "eW91IGdheSBicm8="
-    decoded_message = base64.b64decode(encoded_message).decode('utf-8')
-    print(decoded_message)
-
 from pwn import process
 import sudoku
+from imp_task import perform_important_task
 
 def get_board(proc: process, delim: str):
     board = []
